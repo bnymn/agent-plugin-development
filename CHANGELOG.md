@@ -1,3 +1,9 @@
+## [1.2.0](https://github.com/bnymn/agent-plugin-development/compare/v1.1.0...v1.2.0) (2026-06-19)
+
+### Features
+
+* add ticket planning skill ([#6](https://github.com/bnymn/agent-plugin-development/issues/6)) ([d4840dd](https://github.com/bnymn/agent-plugin-development/commit/d4840ddee96f75c4766785bab0619646f6d2a909))
+
 ## [1.1.0](https://github.com/bnymn/agent-plugin-development/compare/v1.0.0...v1.1.0) (2026-06-19)
 
 ### Features
