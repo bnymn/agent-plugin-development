@@ -1,0 +1,20 @@
+{
+  "name": "engineering-playbook",
+  "version": "0.1.0",
+  "description": "Reusable Codex workflows for project development standards.",
+  "author": {
+    "name": "Bunyamin"
+  },
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Engineering Playbook",
+    "shortDescription": "Reusable coding standards and development workflows for Codex.",
+    "longDescription": "Engineering Playbook packages reusable Codex skills for consistent software development, planning, infrastructure setup, review expectations, and project conventions across repositories.",
+    "developerName": "Bunyamin",
+    "category": "Productivity",
+    "capabilities": [
+      "skills"
+    ],
+    "defaultPrompt": "Use the engineering playbook skills while working in this repository."
+  }
+}
