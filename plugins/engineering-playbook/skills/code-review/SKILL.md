@@ -1,6 +1,8 @@
 ---
 name: code-review
-description: Perform a strict code review for software changes. Use when the coding agent is asked to perform a code review.
+description: >-
+  Perform a strict code review for software changes. Use when the agent is asked
+  to perform a code review.
 ---
 
 # Code Review

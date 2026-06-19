@@ -2,7 +2,7 @@
 name: laravel-standards
 description: >-
   Coding standards for a Laravel application in a repository that may contain
-  multiple applications. Use when the coding agent is modifying or reviewing
+  multiple applications. Use when the agent is modifying or reviewing
   code changes inside the Laravel application codebase.
 ---
 
