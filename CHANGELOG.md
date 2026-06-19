@@ -1,3 +1,9 @@
+## [1.3.0](https://github.com/bnymn/agent-plugin-development/compare/v1.2.0...v1.3.0) (2026-06-19)
+
+### Features
+
+* add development skill workflow ([#7](https://github.com/bnymn/agent-plugin-development/issues/7)) ([2a5b7be](https://github.com/bnymn/agent-plugin-development/commit/2a5b7be8c4d6f56d4ba5566368e18cce6b78b8f1))
+
 ## [1.2.0](https://github.com/bnymn/agent-plugin-development/compare/v1.1.0...v1.2.0) (2026-06-19)
 
 ### Features
