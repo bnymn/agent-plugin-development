@@ -9,7 +9,7 @@
   "interface": {
     "displayName": "Engineering Playbook",
     "shortDescription": "Reusable coding standards and development workflows for Codex.",
-    "longDescription": "Engineering Playbook packages reusable Codex skills for consistent software development, planning, infrastructure setup, review expectations, and project conventions across repositories.",
+    "longDescription": "Codex skills for development, planning, reviews, setup, and conventions.",
     "developerName": "Bunyamin",
     "category": "Productivity",
     "capabilities": [

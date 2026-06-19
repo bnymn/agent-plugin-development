@@ -1,4 +1,0 @@
-interface:
-  display_name: "Laravel Standards"
-  short_description: "Apply standards inside a Laravel app."
-  default_prompt: "Use $laravel-standards when changing code inside a Laravel application."

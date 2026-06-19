@@ -1,6 +1,8 @@
 # Codex Plugin Marketplace
 
-This repository is a custom Codex plugin marketplace for the `engineering-playbook` plugin. The marketplace lets Codex discover the plugin so it can be installed from the plugin browser.
+This repository is a custom Codex plugin marketplace for the
+`engineering-playbook` plugin. The marketplace lets Codex discover the plugin
+so it can be installed from the plugin browser.
 
 ## Install
 
