@@ -32,8 +32,8 @@ const branchProtectionPolicy = {
   enforce_admins: true,
   required_pull_request_reviews: {
     dismiss_stale_reviews: false,
-    require_code_owner_reviews: false,
-    required_approving_review_count: 0,
+    require_code_owner_reviews: true,
+    required_approving_review_count: 1,
     require_last_push_approval: false,
   },
   restrictions: null,

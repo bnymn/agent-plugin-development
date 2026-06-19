@@ -27,8 +27,13 @@ Changes to `main` should go through pull requests. The repository policy is:
 - merge commits and rebase merges are disabled;
 - `main` requires a pull request before merging;
 - `main` requires the `Conventional PR title` check to pass;
+- `main` requires one approving review from `@bnymn` as code owner;
 - administrators are included in the branch protection rule;
 - force pushes and branch deletion are blocked.
+
+This is a public repository, so external contributors can open pull requests from
+forks. They cannot push to protected branches or merge pull requests unless they
+are added as collaborators with sufficient repository permission.
 
 The pull request workflow validates the PR title against the same commit title
 convention used for releases:
