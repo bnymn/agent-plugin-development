@@ -7,7 +7,7 @@ This repository is a custom Codex plugin marketplace for the `engineering-playbo
 Add the marketplace to Codex:
 
 ```bash
-codex plugin marketplace add OWNER/REPO
+codex plugin marketplace add bnymn/agent-plugin-development
 ```
 
 Open the plugin browser:
