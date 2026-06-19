@@ -22,6 +22,7 @@ const repositoryPolicy = {
   allow_squash_merge: true,
   squash_merge_commit_title: "PR_TITLE",
   squash_merge_commit_message: "BLANK",
+  delete_branch_on_merge: true,
 };
 
 const branchProtectionPolicy = {

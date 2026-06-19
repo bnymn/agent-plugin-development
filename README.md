@@ -24,6 +24,7 @@ Changes to `main` should go through pull requests. The repository policy is:
 
 - only squash merges are enabled;
 - squash merge commit titles default to the pull request title;
+- pull request branches are deleted automatically after merge;
 - merge commits and rebase merges are disabled;
 - `main` requires a pull request before merging;
 - `main` requires the `Conventional PR title` check to pass;
