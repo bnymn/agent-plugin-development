@@ -17,3 +17,35 @@ Open the plugin browser:
 ```
 
 Select the marketplace, install `engineering-playbook`, and start a new Codex thread.
+
+## Repository policy
+
+Changes to `main` should go through pull requests. The repository policy is:
+
+- only squash merges are enabled;
+- squash merge commit titles default to the pull request title;
+- merge commits and rebase merges are disabled;
+- `main` requires a pull request before merging;
+- `main` requires the `Conventional PR title` check to pass;
+- administrators are included in the branch protection rule;
+- force pushes and branch deletion are blocked.
+
+The pull request workflow validates the PR title against the same commit title
+convention used for releases:
+
+```bash
+npm run validate-pr-title -- "feat: add release automation"
+```
+
+Apply or re-apply the GitHub repository settings with:
+
+```bash
+npm run apply-repository-policy
+```
+
+The GitHub token used by `gh` must have repository Administration write access to
+update branch protection. To preview the API payloads without changing GitHub:
+
+```bash
+npm run apply-repository-policy -- --dry-run
+```

@@ -5,6 +5,7 @@
   "description": "Release automation for the Engineering Playbook Codex plugin marketplace.",
   "scripts": {
     "release": "semantic-release",
+    "apply-repository-policy": "node scripts/apply-repository-policy.cjs",
     "set-plugin-version": "node scripts/set-plugin-version.cjs",
     "validate-pr-title": "node scripts/validate-conventional-title.cjs"
   },
