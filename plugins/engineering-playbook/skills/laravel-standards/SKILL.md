@@ -8,9 +8,14 @@ description: >-
 
 # Laravel Standards
 
-Laravel is only the delivery and composition layer: collect input, run
-delivery/form/frontend validation for shape and UX only, invoke a
-`src/.../Application/UseCase`, and map the result back to the framework
-response. Do not put business rules, use-case orchestration, domain decisions,
-persistence logic, or infrastructure adapter behavior in Laravel delivery code;
-those belong in `src` according to the hexagonal architecture rule.
+- Treat Laravel as infrastructure only.
+- Use Laravel only for HTTP/UI, console commands, scheduled tasks, queue
+  workers, events, service providers, and runtime integrations.
+- Do not create `Domain` or `Application` layers inside Laravel.
+- Do not put business rules, domain decisions, use-case orchestration, workflow
+  branching, pricing, eligibility, state transitions, persistence decisions, or
+  policy decisions in Laravel.
+- Keep Laravel controllers, requests, commands, jobs, listeners, middleware,
+  providers, models, and other framework code limited to input collection,
+  delivery validation, `src` entrypoint calls, and framework output mapping.
+- Put business and application behavior in `src`.
