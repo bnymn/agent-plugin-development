@@ -1,3 +1,9 @@
+## [1.3.1](https://github.com/bnymn/agent-plugin-development/compare/v1.3.0...v1.3.1) (2026-06-20)
+
+### Bug Fixes
+
+* add ticket planning blockers ([#8](https://github.com/bnymn/agent-plugin-development/issues/8)) ([e085d82](https://github.com/bnymn/agent-plugin-development/commit/e085d828df73e898bc1eb6de7677e55a5b7c150c))
+
 ## [1.3.0](https://github.com/bnymn/agent-plugin-development/compare/v1.2.0...v1.3.0) (2026-06-19)
 
 ### Features
