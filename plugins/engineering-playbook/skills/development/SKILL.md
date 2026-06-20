@@ -58,7 +58,11 @@ format.
 
 ## Verification Gate
 
-- Run the repository's documented Mago command.
+- Run these Mago commands in order:
+  1. `mago fmt --check`
+  2. `mago lint`
+  3. `mago analyze`
+  4. `mago guard`
 - Fix Mago warnings and errors, then rerun Mago.
 - Stop and ask the user when a Mago fix would change the implementation
   direction. Include concrete options.
