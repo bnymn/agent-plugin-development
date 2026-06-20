@@ -26,6 +26,7 @@ description: >-
 - Use `validate...` for value object validation methods that throw, and make
   them return `void`. Use predicate names such as `is...`, `has...`, or
   `does...` only for methods that return `bool` and do not throw.
+- In PHP tests, mark test methods with the `#[Test]` attribute instead of the `test...` prefix or `@test` docblock annotation.
 
 ## Rule: Hexagonal Architecture
 Follow hexagonal architecture as the baseline. Apply these project conventions on top of it:
