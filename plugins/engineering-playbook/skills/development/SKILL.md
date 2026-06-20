@@ -74,6 +74,8 @@ Create a pull request only when all of these are true:
 - unresolved `Low` findings have been shown to the user
 - Mago passes without warnings or errors
 - relevant tests pass
+- the pull request description includes `Closes #<issue-number>` when the work
+  resolves a GitHub issue
 
 If any gate is not clean, do not create the pull request. Report what is done,
 what failed, the commands run, and the question or decision needed from the
