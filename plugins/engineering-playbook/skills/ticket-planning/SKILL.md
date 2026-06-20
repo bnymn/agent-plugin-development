@@ -1,9 +1,10 @@
 ---
 name: ticket-planning
 description: >-
-  Draft concise GitHub issue plans in simple English before issue creation. Use
-  when the user asks to plan, write, shape, or prepare a ticket, issue, backlog
-  item, feature request, bug task, or implementation plan.
+  Draft concise GitHub issue plans in simple English before issue creation,
+  including blocker checks against open GitHub issues. Use when the user asks to
+  plan, write, shape, or prepare a ticket, issue, backlog item, feature request,
+  bug task, or implementation plan.
 ---
 
 # Ticket Planning
@@ -23,20 +24,26 @@ Keep the voice practical, direct, and simple.
 
 ## Workflow
 
-1. Gather only the context needed to draft a useful ticket. If the request is
-   clear enough, draft immediately.
-2. Show the draft in chat first. Do not create a GitHub issue yet.
-3. Wait for explicit user approval, such as "create it" or "open the issue".
-4. After approval, create the GitHub issue using the draft. If the repository is
+1. Gather only the context needed to draft a useful ticket. Identify the target
+   GitHub repository from the request or surrounding context.
+2. Before drafting, read all open GitHub issues in the target repository across
+   all pages and check whether any open issue directly blocks the planned
+   ticket. If the repository is unknown and cannot be inferred, ask which
+   repository to check.
+3. Show the draft in chat first. Do not create a GitHub issue yet.
+4. Wait for explicit user approval, such as "create it" or "open the issue".
+5. After approval, create the GitHub issue using the draft. If the repository is
    unknown and cannot be inferred, ask which repository to use.
 
 ## Draft Format
 
-Use exactly these three section titles unless the user asks for a different
+Use exactly these four section titles unless the user asks for a different
 format:
 
 ```markdown
 ## What
+
+## Blocked by
 
 ## Why
 
@@ -56,6 +63,9 @@ format:
 
 - `What`: describe the requested outcome or behavior. Do not explain business
   value or implementation.
+- `Blocked by`: state whether the ticket is blocked by any open GitHub issue.
+  If blocked, write "This ticket is blocked by #1, #10, #12." If not blocked,
+  write "This ticket is not blocked by another open ticket."
 - `Why`: explain the problem, value, user need, or decision context. Do not
   restate the outcome.
 - `How`: describe the practical implementation approach, important constraints,
@@ -67,6 +77,6 @@ When the user approves issue creation:
 
 - Use a short issue title derived from the `What` section unless the user
   provided a title.
-- Use the three-section draft as the issue body.
+- Use the four-section draft as the issue body.
 - Preserve the concise wording unless the user requested edits before approval.
 - Report the created issue link after creation.
