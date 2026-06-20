@@ -1,3 +1,9 @@
+## [1.3.4](https://github.com/bnymn/agent-plugin-development/compare/v1.3.3...v1.3.4) (2026-06-20)
+
+### Bug Fixes
+
+* add PHP test attribute standard ([#11](https://github.com/bnymn/agent-plugin-development/issues/11)) ([011debb](https://github.com/bnymn/agent-plugin-development/commit/011debb1fd83af5f2e91a470598059bd4c8ffadc))
+
 ## [1.3.3](https://github.com/bnymn/agent-plugin-development/compare/v1.3.2...v1.3.3) (2026-06-20)
 
 ### Bug Fixes
