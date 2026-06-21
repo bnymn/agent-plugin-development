@@ -1,3 +1,9 @@
+## [1.3.7](https://github.com/bnymn/agent-plugin-development/compare/v1.3.6...v1.3.7) (2026-06-21)
+
+### Bug Fixes
+
+* add truthful naming standard ([#15](https://github.com/bnymn/agent-plugin-development/issues/15)) ([c5f2224](https://github.com/bnymn/agent-plugin-development/commit/c5f2224e2eb3edf80d8a5db03182bacd736d837e))
+
 ## [1.3.6](https://github.com/bnymn/agent-plugin-development/compare/v1.3.5...v1.3.6) (2026-06-21)
 
 ### Bug Fixes
