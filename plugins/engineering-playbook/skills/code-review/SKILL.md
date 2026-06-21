@@ -23,8 +23,8 @@ Use those standards as hard review criteria, not background suggestions.
    diff, commit diff, staged changes, or working-tree changes.
 2. Inspect every changed file line by line. For each changed class, method,
    function, variable, route, config value, migration, test, and dependency
-   boundary, check whether the implementation is correct and whether the names
-   reveal the real behavior.
+   boundary, check whether the implementation is correct and whether the text
+   and names reveal the real behavior.
 3. Read surrounding code until the intent, call paths, data flow, side effects,
    and failure behavior are clear. Do not review a line in isolation when nearby
    code changes its meaning.
@@ -45,6 +45,9 @@ Use those standards as hard review criteria, not background suggestions.
 6. Prefer small, local fixes that preserve the existing architecture. Suggest
    broader redesign only when the local fix would hide a deeper correctness or
    maintainability problem.
+7. Report truthful naming violations as `Normal` severity by default. Escalate
+   only when the misleading name creates a blocker-level correctness, security,
+   or data risk.
 
 ## Output Format
 
