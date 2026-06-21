@@ -1,3 +1,9 @@
+## [1.3.5](https://github.com/bnymn/agent-plugin-development/compare/v1.3.4...v1.3.5) (2026-06-21)
+
+### Bug Fixes
+
+* clarify Laravel infrastructure boundary ([#12](https://github.com/bnymn/agent-plugin-development/issues/12)) ([00af2c5](https://github.com/bnymn/agent-plugin-development/commit/00af2c5c4588e9ea55710fa51218435f225a84c2))
+
 ## [1.3.4](https://github.com/bnymn/agent-plugin-development/compare/v1.3.3...v1.3.4) (2026-06-20)
 
 ### Bug Fixes
