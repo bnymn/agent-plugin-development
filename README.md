@@ -18,10 +18,10 @@ Select the marketplace, install `engineering-playbook`, and start a new Codex th
 
 ## Update
 
-Open the plugin browser:
+Upgrade the marketplace plugin, then install the updated `engineering-playbook`
+plugin from that marketplace:
 
-```text
-/plugins
+```bash
+codex plugin marketplace upgrade agent-plugin-development
+codex plugin add engineering-playbook@agent-plugin-development
 ```
-
-Update `engineering-playbook`, then start a new Codex thread.
