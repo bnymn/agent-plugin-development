@@ -17,8 +17,6 @@ description: >-
   private/protected method or dedicated class with a name that explains the
   intent. A reader should understand what the logic means from the name before
   reading the implementation.
-- Name methods, classes, variables, and use cases after what they actually do,
-  including important side effects. Do not use names that hide behavior.
 - Avoid negative boolean names for methods, variables, value objects, and
   persisted fields. Prefer positive names such as `isEnabled` or
   `isPubliclyAvailable` instead of `isDisabled`, `isPaused`, or other names
@@ -27,6 +25,16 @@ description: >-
   them return `void`. Use predicate names such as `is...`, `has...`, or
   `does...` only for methods that return `bool` and do not throw.
 - In PHP tests, mark test methods with the `#[Test]` attribute instead of the `test...` prefix or `@test` docblock annotation.
+
+## Rule: Truthful Naming
+All text and names must tell the truth about the implementation they represent.
+
+1. Name classes, methods, variables, use cases, tests, comments, and labels
+   after what they actually do or mean.
+2. Include important side effects, boundaries, and failure behavior in the name
+   when omitting them would mislead the reader.
+3. Prefer renaming over hiding behavior behind vague, aspirational, or
+   overly-polished language.
 
 ## Rule: Hexagonal Architecture
 Follow hexagonal architecture as the baseline.
