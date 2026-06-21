@@ -29,10 +29,18 @@ description: >-
 - In PHP tests, mark test methods with the `#[Test]` attribute instead of the `test...` prefix or `@test` docblock annotation.
 
 ## Rule: Hexagonal Architecture
-Follow hexagonal architecture as the baseline. Apply these project conventions on top of it:
+Follow hexagonal architecture as the baseline.
 
-- Organize each module as `Domain`, `Application`, and `Infrastructure`;
+- Organize each business module in `src` as `Domain`, `Application`, and `Infrastructure`;
   dependencies point inward only.
+- Put all business rules and decisions in `Domain`.
+- Use `Application` only for use-case orchestration, transaction boundaries,
+  authorization handoff, domain calls, ports, and input/output mapping.
+- Use `Infrastructure` only for adapters such as persistence, queues, HTTP
+  clients, framework integration, and serialization.
+- Treat framework applications, including Laravel apps, as infrastructure
+  adapters only; do not create or hide `Domain`, `Application`, business rules,
+  or use-case orchestration there.
 - Use cases live under `<Module>/Application/UseCase`, start with a verb, end
   with `UseCase`, do one user-intent only, and expose exactly one public method:
   `__invoke`. For example, use `CreateUserUseCase`, not
