@@ -41,7 +41,11 @@ Follow hexagonal architecture as the baseline.
 
 - Organize each business module in `src` as `Domain`, `Application`, and `Infrastructure`;
   dependencies point inward only.
-- Put all business rules and decisions in `Domain`.
+- Before writing or reviewing any conditional, validation, state transition,
+  calculation, policy, or workflow decision, ask: "Is this a business rule?"
+- If the answer is yes, put it in `Domain`. This is a hard requirement: business
+  rules must never live in `Application`, `Infrastructure`, framework code,
+  adapters, controllers, jobs, requests, commands, listeners, or UI glue.
 - Use `Application` only for use-case orchestration, transaction boundaries,
   authorization handoff, domain calls, ports, and input/output mapping.
 - Use `Infrastructure` only for adapters such as persistence, queues, HTTP
