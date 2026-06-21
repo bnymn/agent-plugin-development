@@ -1,3 +1,9 @@
+## [1.3.6](https://github.com/bnymn/agent-plugin-development/compare/v1.3.5...v1.3.6) (2026-06-21)
+
+### Bug Fixes
+
+* add pull request writing rules ([#13](https://github.com/bnymn/agent-plugin-development/issues/13)) ([05468ba](https://github.com/bnymn/agent-plugin-development/commit/05468baeb5377bf54997b4d962356157624245f1))
+
 ## [1.3.5](https://github.com/bnymn/agent-plugin-development/compare/v1.3.4...v1.3.5) (2026-06-21)
 
 ### Bug Fixes
