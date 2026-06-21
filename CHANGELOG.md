@@ -1,3 +1,9 @@
+## [1.3.8](https://github.com/bnymn/agent-plugin-development/compare/v1.3.7...v1.3.8) (2026-06-21)
+
+### Bug Fixes
+
+* enforce domain-only business rules ([#16](https://github.com/bnymn/agent-plugin-development/issues/16)) ([cb051fc](https://github.com/bnymn/agent-plugin-development/commit/cb051fcab1c2e9e8a61a313014c2e2b56b21b913))
+
 ## [1.3.7](https://github.com/bnymn/agent-plugin-development/compare/v1.3.6...v1.3.7) (2026-06-21)
 
 ### Bug Fixes
