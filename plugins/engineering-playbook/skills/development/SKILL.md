@@ -16,6 +16,9 @@ source of truth.
 ## Load First
 
 - Read `coding-standards`.
+- Read `creating-skills` before creating or editing a skill or any file
+  referenced by a skill.
+- Read `pull-request` before creating or preparing a pull request.
 - Read `laravel-standards` before touching code that affects a
   Laravel application.
 
@@ -71,20 +74,9 @@ format.
 
 ## Pull Request Gate
 
-Create a pull request only when all of these are true:
+Create a pull request only after the implementation is done, required review
+findings are handled, Mago is clean, and relevant tests pass. Otherwise report
+the blocker instead of opening the PR.
 
-- implementation satisfies the request
-- `Blocker` and `Normal` review findings are fixed
-- unresolved `Low` findings have been shown to the user
-- Mago passes without warnings or errors
-- relevant tests pass
-- the commit message and pull request title use Conventional Commits
-- the pull request description is one short high-level plain-English paragraph
-  without technical details
-- the pull request description includes `Closes #<issue-number>` when the work
-  resolves a GitHub issue, and does not mention any issue the pull request does
-  not resolve
-
-If any gate is not clean, do not create the pull request. Report what is done,
-what failed, the commands run, and the question or decision needed from the
-user.
+When this gate is clean, follow `pull-request` to write the title and
+description.
