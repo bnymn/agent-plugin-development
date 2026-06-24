@@ -1,3 +1,9 @@
+## [1.4.0](https://github.com/bnymn/agent-plugin-development/compare/v1.3.8...v1.4.0) (2026-06-24)
+
+### Features
+
+* add pull request skill workflow ([#17](https://github.com/bnymn/agent-plugin-development/issues/17)) ([5c0ee80](https://github.com/bnymn/agent-plugin-development/commit/5c0ee8076d7c973d22c4aee23cd904f792a8b80a))
+
 ## [1.3.8](https://github.com/bnymn/agent-plugin-development/compare/v1.3.7...v1.3.8) (2026-06-21)
 
 ### Bug Fixes
