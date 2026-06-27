@@ -1,3 +1,9 @@
+## [1.5.0](https://github.com/bnymn/agent-plugin-development/compare/v1.4.0...v1.5.0) (2026-06-27)
+
+### Features
+
+* enforce Laravel delivery boundaries ([#18](https://github.com/bnymn/agent-plugin-development/issues/18)) ([1f5eec3](https://github.com/bnymn/agent-plugin-development/commit/1f5eec3a8ef80f46b7fc15b1b9e347908332480c))
+
 ## [1.4.0](https://github.com/bnymn/agent-plugin-development/compare/v1.3.8...v1.4.0) (2026-06-24)
 
 ### Features
