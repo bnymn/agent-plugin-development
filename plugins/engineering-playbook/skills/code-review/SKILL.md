@@ -1,8 +1,9 @@
 ---
 name: code-review
 description: >-
-  Perform a strict code review for software changes. Use when the agent is asked
-  to perform a code review.
+  Performs strict software code reviews for diffs, pull requests, branches, or
+  working trees. Use when asked to review code, find bugs, assess tests, enforce
+  coding standards, or catch Laravel delivery-layer boundary violations.
 ---
 
 # Code Review
@@ -28,9 +29,21 @@ Use those standards as hard review criteria, not background suggestions.
 3. Read surrounding code until the intent, call paths, data flow, side effects,
    and failure behavior are clear. Do not review a line in isolation when nearby
    code changes its meaning.
-4. Check the implementation against:
+4. When `laravel-standards` applies, perform an explicit Laravel boundary audit
+   for every changed Laravel delivery file. Review the final file contents line
+   by line, not only the diff hunks. Check controllers, commands, jobs,
+   listeners, middleware, requests, policies, resources, providers, and other
+   framework classes for business rules, workflow branching, use-case
+   orchestration, domain decisions, transaction boundaries, Eloquent/query
+   builder/`DB`/repository calls, and framework-side persistence decisions. If
+   any are present, report a `Blocker` finding with the exact file and line. Do
+   not conclude the review until this audit is complete.
+5. Check the implementation against:
    - coding standards and hexagonal architecture rules
    - Laravel delivery-layer boundaries and framework conventions
+   - any business logic, application orchestration, or direct persistence calls
+     in Laravel controllers, commands, jobs, listeners, middleware, requests,
+     policies, resources, or providers
    - functional correctness against the requested behavior
    - security, authorization, validation, escaping, secrets, and data exposure
    - edge cases, null/empty states, invalid input, missing records, partial failures, and retries
@@ -39,15 +52,31 @@ Use those standards as hard review criteria, not background suggestions.
    - API contracts, backward compatibility, error responses, and observability
    - test coverage, test quality, and missing regression scenarios
    - maintainability, duplication, coupling, naming, and unnecessary abstractions
-5. Treat issues as findings only when they are actionable and grounded in the
+6. Treat issues as findings only when they are actionable and grounded in the
    reviewed code. Avoid speculative findings unless the risk is concrete and
    explain the assumption.
-6. Prefer small, local fixes that preserve the existing architecture. Suggest
+7. Prefer small, local fixes that preserve the existing architecture. Suggest
    broader redesign only when the local fix would hide a deeper correctness or
    maintainability problem.
 7. Report truthful naming violations as `Normal` severity by default. Escalate
    only when the misleading name creates a blocker-level correctness, security,
    or data risk.
+
+## Quality Loop
+
+Before finalizing, re-read each finding and confirm:
+
+- the finding is grounded in a specific changed line, method, or file
+- every changed Laravel delivery file has been boundary-audited when
+  `laravel-standards` applies
+- every Laravel boundary violation is reported as `Blocker`
+- the output follows the required format below
+
+Any new or expanded business rule, use-case orchestration, workflow branching,
+domain decision, transaction boundary, or direct database/query/repository call
+inside Laravel delivery code is a `Blocker` finding. The fix is to move that
+behavior into `src` under the application or domain layer and call one explicit
+application use case from Laravel.
 
 ## Output Format
 
@@ -64,6 +93,9 @@ Lead with numbered findings ordered by severity. Each finding must include:
 
 After findings, include:
 
+- `Laravel boundary audit:` say `completed` when `laravel-standards` applies,
+  otherwise say `not applicable`; if completed, list the Laravel delivery files
+  audited
 - `Open questions:` only when answers would change the review outcome.
 - `Tests:` describe relevant tests run or missing verification.
 - `Summary:` one short paragraph only after the findings.
