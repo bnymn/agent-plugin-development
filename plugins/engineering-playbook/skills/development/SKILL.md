@@ -31,9 +31,13 @@ source of truth.
    implementation.
 3. Ask only blocking questions. If the request is clear enough to implement,
    start without waiting.
-4. Make the smallest maintainable change that satisfies the request. Follow
+4. Before touching Laravel delivery code, name the `src` application use case
+   that owns the behavior. If the use case does not exist, create or update it
+   first; keep controllers, commands, jobs, listeners, and middleware limited to
+   delivery wiring and response mapping.
+5. Make the smallest maintainable change that satisfies the request. Follow
    existing patterns, coding standards, and Laravel delivery-layer boundaries.
-5. Add or update focused tests when behavior changes or regression risk justifies
+6. Add or update focused tests when behavior changes or regression risk justifies
    it.
 
 ## Review Gate
