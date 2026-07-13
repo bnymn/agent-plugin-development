@@ -1,3 +1,9 @@
+## [1.6.0](https://github.com/bnymn/agent-plugin-development/compare/v1.5.0...v1.6.0) (2026-07-13)
+
+### Features
+
+* **standards:** add GDPR review rule ([#19](https://github.com/bnymn/agent-plugin-development/issues/19)) ([8643ffb](https://github.com/bnymn/agent-plugin-development/commit/8643ffb041f58bf3ea21314983967ea4bb2d982a))
+
 ## [1.5.0](https://github.com/bnymn/agent-plugin-development/compare/v1.4.0...v1.5.0) (2026-06-27)
 
 ### Features
