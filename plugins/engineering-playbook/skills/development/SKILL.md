@@ -42,22 +42,30 @@ source of truth.
 
 ## Review Gate
 
-After implementation, spawn a sub-agent for one independent code review round.
-Do not repeat code review after fixing findings.
+Run one review after the initial implementation. Do not review again after
+fixing findings or making follow-up changes unless the user explicitly asks.
 
-If the task has a GitHub issue link, pass only:
+Classify the change by its highest applicable risk:
 
-- the GitHub issue link
-- the full diff
+- `Low`: a small, localized, or behavior-preserving change. Mechanical changes
+  such as safe internal renames may remain low risk regardless of file count.
+- `Medium`: a bounded behavior change or small feature affecting no more than 20
+  materially changed files, with no high-risk condition.
+- `High`: more than 20 materially changed files with non-mechanical changes; a
+  large or cross-module feature; substantial domain or business-rule changes;
+  or changes affecting security, authorization, personal data, payments,
+  migrations, transactions, concurrency, data integrity, or public contracts.
 
-If the task has no GitHub link or issue link, pass only:
+Generated files, snapshots, and lockfiles do not raise risk by themselves. A
+rename is low risk only when it does not change an external contract.
 
-1. A ticket description extracted from the request and implementation by using
-   `ticket-planning`.
-2. The full diff.
+For `Low` and `Medium`, the main agent performs one self-review using
+`code-review`.
 
-Instruct the sub-agent to use `code-review` and return that skill's exact output
-format.
+For `High`, spawn one sub-agent without inherited conversation context. The
+sub-agent shares the workspace and inspects the diff directly. Give it only the
+original request or GitHub issue link, the review scope, and an instruction to
+use `code-review`. Do not paste the diff or implementation reasoning.
 
 - Fix `Blocker` and `Normal` findings before continuing.
 - Do not fix `Low` findings automatically. Show them to the user and ask how to
@@ -65,16 +73,19 @@ format.
 
 ## Verification Gate
 
-- Run these Mago commands in order:
+Run one Mago round per task after review findings are handled. Do not run Mago
+again for fixes or follow-up changes unless the user explicitly asks.
+
+- Run each command once in order:
   1. `mago fmt --check`
   2. `mago lint`
   3. `mago analyze`
   4. `mago guard`
-- Fix Mago warnings and errors, then rerun Mago.
+- Fix Mago warnings and errors without rerunning Mago.
 - Stop and ask the user when a Mago fix would change the implementation
   direction. Include concrete options.
-- Run relevant tests after Mago passes. Start focused; broaden when shared
-  behavior or risk requires it. Fix failures and rerun.
+- Run relevant tests. Start focused; broaden when shared behavior or risk
+  requires it. Fix failures and rerun.
 
 ## Pull Request Gate
 
