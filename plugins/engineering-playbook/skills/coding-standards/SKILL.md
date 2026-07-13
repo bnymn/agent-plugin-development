@@ -36,6 +36,17 @@ All text and names must tell the truth about the implementation they represent.
 3. Prefer renaming over hiding behavior behind vague, aspirational, or
    overly-polished language.
 
+## Rule: GDPR
+During every feature implementation and code review, check whether personal data
+is involved. If so, do not complete or approve the change until these are clear:
+
+- Why the data is collected and the lawful basis.
+- How the minimum necessary data is processed and protected.
+- How long the data is retained.
+- When and how the data is deleted.
+
+Treat unknown GDPR requirements as blockers and request privacy or legal guidance.
+
 ## Rule: Hexagonal Architecture
 Follow hexagonal architecture as the baseline.
 

@@ -12,6 +12,8 @@ description: >-
 
 1. Use a short Conventional Commit title. Do not add an issue number to the title
    unless the repository requires it.
+   In this repository, classify skill-file changes as `feat` or `fix`, never
+   `docs`.
 2. Write one high-level plain-English paragraph for the body. Leave out
    implementation details, test logs, file lists, checklists, and review notes
    unless a repository template requires them.
