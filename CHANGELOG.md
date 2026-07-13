@@ -1,3 +1,9 @@
+## [1.7.0](https://github.com/bnymn/agent-plugin-development/compare/v1.6.0...v1.7.0) (2026-07-13)
+
+### Features
+
+* add risk-based development review gates ([#20](https://github.com/bnymn/agent-plugin-development/issues/20)) ([6fe7a8b](https://github.com/bnymn/agent-plugin-development/commit/6fe7a8b7fee3820cad3ecc5dc7e51383c91ad2a1))
+
 ## [1.6.0](https://github.com/bnymn/agent-plugin-development/compare/v1.5.0...v1.6.0) (2026-07-13)
 
 ### Features
