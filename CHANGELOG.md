@@ -1,3 +1,9 @@
+## [1.15.0](https://github.com/bnymn/agent-plugin-development/compare/v1.14.0...v1.15.0) (2026-07-15)
+
+### Features
+
+* add Luna Git publisher agent ([#39](https://github.com/bnymn/agent-plugin-development/issues/39)) ([01c12e3](https://github.com/bnymn/agent-plugin-development/commit/01c12e3f4238bdbc713a93e0bd3955557d642394))
+
 ## [1.14.0](https://github.com/bnymn/agent-plugin-development/compare/v1.13.0...v1.14.0) (2026-07-15)
 
 ### Features
