@@ -1,3 +1,9 @@
+## [1.10.1](https://github.com/bnymn/agent-plugin-development/compare/v1.10.0...v1.10.1) (2026-07-15)
+
+### Bug Fixes
+
+* make Mago verification conditional ([#31](https://github.com/bnymn/agent-plugin-development/issues/31)) ([b66b9f9](https://github.com/bnymn/agent-plugin-development/commit/b66b9f9a487399dbd6726e3ee71d92eb1ca46993))
+
 ## [1.10.0](https://github.com/bnymn/agent-plugin-development/compare/v1.9.0...v1.10.0) (2026-07-15)
 
 ### Features
