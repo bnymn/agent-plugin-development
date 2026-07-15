@@ -1,3 +1,9 @@
+## [1.9.0](https://github.com/bnymn/agent-plugin-development/compare/v1.8.0...v1.9.0) (2026-07-15)
+
+### Features
+
+* bound ticket-planning blocker searches ([#29](https://github.com/bnymn/agent-plugin-development/issues/29)) ([d7b3ed9](https://github.com/bnymn/agent-plugin-development/commit/d7b3ed959f5dbb0b5731497f9032113ab857caf1))
+
 ## [1.8.0](https://github.com/bnymn/agent-plugin-development/compare/v1.7.0...v1.8.0) (2026-07-15)
 
 ### Features
