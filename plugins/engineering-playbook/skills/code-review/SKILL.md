@@ -1,9 +1,6 @@
 ---
 name: code-review
-description: >-
-  Performs strict software code reviews for diffs, pull requests, branches, or
-  working trees. Use when asked to review code, find bugs, assess tests, enforce
-  coding standards, or catch Laravel delivery-layer boundary violations.
+description: Reviews software changes and reports actionable defects. Use for an explicit code-review request.
 ---
 
 # Code Review

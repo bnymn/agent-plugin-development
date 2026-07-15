@@ -1,8 +1,6 @@
 ---
 name: development
-description: >-
-  Implement code changes from a user request or GitHub issue. Use when the user
-  asks an agent to build, fix, refactor, or develop a ticket, feature, or issue.
+description: Implements software changes from a request or GitHub issue. Use when asked to change code or repository files.
 ---
 
 # Development

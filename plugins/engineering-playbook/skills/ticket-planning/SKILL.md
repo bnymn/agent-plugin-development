@@ -1,10 +1,6 @@
 ---
 name: ticket-planning
-description: >-
-  Draft concise GitHub issue plans in simple English before issue creation,
-  including blocker checks against open GitHub issues. Use when the user asks to
-  plan, write, shape, or prepare a ticket, issue, backlog item, feature request,
-  bug task, or implementation plan.
+description: Drafts concise GitHub issues and checks blockers before creation. Use when asked to plan a GitHub issue.
 ---
 
 # Ticket Planning

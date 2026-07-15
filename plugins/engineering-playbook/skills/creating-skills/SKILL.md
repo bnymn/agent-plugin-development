@@ -1,10 +1,6 @@
 ---
 name: creating-skills
-description: >-
-  Creates, edits, and maintains agent skills and their referenced resources.
-  Use when creating a new skill, editing SKILL.md, changing skill frontmatter,
-  or modifying files referenced by a skill such as references, scripts, or
-  assets.
+description: Defines skill-authoring guidance loaded by development before skill or skill-resource changes.
 ---
 
 ## Source
