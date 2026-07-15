@@ -1,3 +1,9 @@
+## [1.14.0](https://github.com/bnymn/agent-plugin-development/compare/v1.13.0...v1.14.0) (2026-07-15)
+
+### Features
+
+* avoid full guidance reads for minor skill edits ([#38](https://github.com/bnymn/agent-plugin-development/issues/38)) ([876d73b](https://github.com/bnymn/agent-plugin-development/commit/876d73b61b118a4d6b3dca17f9bbf0ebb4d0cb45))
+
 ## [1.13.0](https://github.com/bnymn/agent-plugin-development/compare/v1.12.0...v1.13.0) (2026-07-15)
 
 ### Features
