@@ -14,6 +14,8 @@ source of truth.
 ## Load First
 
 - Read `coding-standards`.
+- Read `code-exploration` before broad cross-module exploration or contract
+  tracing.
 - Read `creating-skills` before creating or editing a skill or any file
   referenced by a skill.
 - Read `pull-request` before creating or preparing a pull request.
