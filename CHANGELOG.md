@@ -1,3 +1,9 @@
+## [1.12.0](https://github.com/bnymn/agent-plugin-development/compare/v1.11.0...v1.12.0) (2026-07-15)
+
+### Features
+
+* load coding standards conditionally ([#36](https://github.com/bnymn/agent-plugin-development/issues/36)) ([4bda606](https://github.com/bnymn/agent-plugin-development/commit/4bda6065c5c2980831c47866de0ef56075754d79))
+
 ## [1.11.0](https://github.com/bnymn/agent-plugin-development/compare/v1.10.1...v1.11.0) (2026-07-15)
 
 ### Features
