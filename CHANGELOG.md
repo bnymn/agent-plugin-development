@@ -1,3 +1,9 @@
+## [1.11.0](https://github.com/bnymn/agent-plugin-development/compare/v1.10.1...v1.11.0) (2026-07-15)
+
+### Features
+
+* simplify code-review output ([#35](https://github.com/bnymn/agent-plugin-development/issues/35)) ([d5f66c8](https://github.com/bnymn/agent-plugin-development/commit/d5f66c8f5af0377e635f5d813fc76efe637689fb))
+
 ## [1.10.1](https://github.com/bnymn/agent-plugin-development/compare/v1.10.0...v1.10.1) (2026-07-15)
 
 ### Bug Fixes
