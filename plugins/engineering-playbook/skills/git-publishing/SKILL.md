@@ -1,6 +1,6 @@
 ---
 name: git-publishing
-description: Commits and pushes completed changes safely. Use only when the user explicitly requests both operations.
+description: Commits and pushes completed changes and creates pull requests. Use when the user requests commit-and-push or a PR for local changes.
 ---
 
 # Git Publishing
@@ -12,8 +12,10 @@ When running as `git-publisher`, read
 
 ## Workflow
 
-1. Invoke `git-publisher` only after implementation, review, and verification.
-2. Give it the repository path, change scope, and exact paths to commit.
+1. Invoke `git-publisher` only after implementation, review, and verification
+   when the user requests commit-and-push or a pull request.
+2. Give it the repository path, change scope, exact paths, and any requested PR
+   base or readiness.
 3. If unavailable, follow `references/git-publisher-agent.md` in this thread.
 
 Keep edits, verification, conflict resolution, and ambiguous scope decisions
