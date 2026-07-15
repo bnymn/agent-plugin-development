@@ -22,10 +22,14 @@ Keep the voice practical, direct, and simple.
 
 1. Gather only the context needed to draft a useful ticket. Identify the target
    GitHub repository from the request or surrounding context.
-2. Before drafting, read all open GitHub issues in the target repository across
-   all pages and check whether any open issue directly blocks the planned
-   ticket. If the repository is unknown and cannot be inferred, ask which
-   repository to check.
+2. Before drafting, check whether an open issue directly blocks the planned
+   ticket. Derive search terms from the requested outcome and affected
+   components, then run up to three targeted open-issue searches. Inspect only
+   the first page of each search and at most 20 unique, plausible blockers in
+   total. Open an issue's full details only when its title or returned body
+   excerpt suggests a direct dependency. Do not scan the complete backlog. If
+   the repository is unknown and cannot be inferred, ask which repository to
+   check.
 3. Show the draft in chat first. Do not create a GitHub issue yet.
 4. Wait for explicit user approval, such as "create it" or "open the issue".
 5. After approval, create the GitHub issue using the draft. If the repository is
