@@ -1,3 +1,9 @@
+## [1.10.0](https://github.com/bnymn/agent-plugin-development/compare/v1.9.0...v1.10.0) (2026-07-15)
+
+### Features
+
+* centralize Laravel architecture policy ([#30](https://github.com/bnymn/agent-plugin-development/issues/30)) ([12ecbb4](https://github.com/bnymn/agent-plugin-development/commit/12ecbb4325ec2e7e1af5b16c8199dcfaf4fe1fa3))
+
 ## [1.9.0](https://github.com/bnymn/agent-plugin-development/compare/v1.8.0...v1.9.0) (2026-07-15)
 
 ### Features
