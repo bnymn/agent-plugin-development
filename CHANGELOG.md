@@ -1,3 +1,9 @@
+## [1.8.0](https://github.com/bnymn/agent-plugin-development/compare/v1.7.0...v1.8.0) (2026-07-15)
+
+### Features
+
+* tighten skill activation boundaries ([#28](https://github.com/bnymn/agent-plugin-development/issues/28)) ([b10d84d](https://github.com/bnymn/agent-plugin-development/commit/b10d84d953e5c945edd358f57a8c2b9034cab63b))
+
 ## [1.7.0](https://github.com/bnymn/agent-plugin-development/compare/v1.6.0...v1.7.0) (2026-07-13)
 
 ### Features
