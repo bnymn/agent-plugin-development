@@ -26,21 +26,13 @@ Use those standards as hard review criteria, not background suggestions.
 3. Read surrounding code until the intent, call paths, data flow, side effects,
    and failure behavior are clear. Do not review a line in isolation when nearby
    code changes its meaning.
-4. When `laravel-standards` applies, perform an explicit Laravel boundary audit
-   for every changed Laravel delivery file. Review the final file contents line
-   by line, not only the diff hunks. Check controllers, commands, jobs,
-   listeners, middleware, requests, policies, resources, providers, and other
-   framework classes for business rules, workflow branching, use-case
-   orchestration, domain decisions, transaction boundaries, Eloquent/query
-   builder/`DB`/repository calls, and framework-side persistence decisions. If
-   any are present, report a `Blocker` finding with the exact file and line. Do
-   not conclude the review until this audit is complete.
+4. When `laravel-standards` applies, audit the final contents of every changed
+   Laravel delivery file against it, not only the diff hunks. Report every
+   violation as a `Blocker` finding with the exact file and line. Do not
+   conclude the review until this audit is complete.
 5. Check the implementation against:
    - coding standards and hexagonal architecture rules
    - Laravel delivery-layer boundaries and framework conventions
-   - any business logic, application orchestration, or direct persistence calls
-     in Laravel controllers, commands, jobs, listeners, middleware, requests,
-     policies, resources, or providers
    - functional correctness against the requested behavior
    - security, authorization, validation, escaping, secrets, and data exposure
    - edge cases, null/empty states, invalid input, missing records, partial failures, and retries
@@ -68,12 +60,6 @@ Before finalizing, re-read each finding and confirm:
   `laravel-standards` applies
 - every Laravel boundary violation is reported as `Blocker`
 - the output follows the required format below
-
-Any new or expanded business rule, use-case orchestration, workflow branching,
-domain decision, transaction boundary, or direct database/query/repository call
-inside Laravel delivery code is a `Blocker` finding. The fix is to move that
-behavior into `src` under the application or domain layer and call one explicit
-application use case from Laravel.
 
 ## Output Format
 
