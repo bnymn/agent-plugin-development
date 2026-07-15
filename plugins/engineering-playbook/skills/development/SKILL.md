@@ -21,6 +21,8 @@ source of truth.
   tracing.
 - Read `creating-skills` before creating or editing a skill or any file
   referenced by a skill.
+- Read `git-publishing` before committing and pushing when the user explicitly
+  requests both operations.
 - Read `pull-request` before creating or preparing a pull request.
 - Read `laravel-standards` before touching code that affects a
   Laravel application.
