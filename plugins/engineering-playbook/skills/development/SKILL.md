@@ -17,6 +17,8 @@ source of truth.
 - After identifying the affected code, apply its conditional-reference loading
   rules and read only the references that apply before choosing an
   implementation or editing files.
+- Read `code-exploration` before broad cross-module exploration or contract
+  tracing.
 - Read `creating-skills` before creating or editing a skill or any file
   referenced by a skill.
 - Read `pull-request` before creating or preparing a pull request.
