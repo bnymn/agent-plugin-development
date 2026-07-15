@@ -14,6 +14,9 @@ source of truth.
 ## Load First
 
 - Read `coding-standards`.
+- After identifying the affected code, apply its conditional-reference loading
+  rules and read only the references that apply before choosing an
+  implementation or editing files.
 - Read `code-exploration` before broad cross-module exploration or contract
   tracing.
 - Read `creating-skills` before creating or editing a skill or any file
@@ -27,7 +30,8 @@ source of truth.
 1. Identify the goal, context, constraints, and done condition. If a GitHub
    issue is provided, read it before editing and extract the problem, expected
    behavior, acceptance criteria, and non-goals.
-2. Inspect the relevant code, tests, and documented commands before choosing an
+2. Inspect the relevant code, tests, data flows, and documented commands. Use
+   that scope to complete the conditional-reference check before choosing an
    implementation.
 3. Ask only blocking questions. If the request is clear enough to implement,
    start without waiting.
