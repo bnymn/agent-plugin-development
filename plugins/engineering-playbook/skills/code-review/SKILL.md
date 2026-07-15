@@ -47,7 +47,7 @@ Use those standards as hard review criteria, not background suggestions.
 7. Prefer small, local fixes that preserve the existing architecture. Suggest
    broader redesign only when the local fix would hide a deeper correctness or
    maintainability problem.
-7. Report truthful naming violations as `Normal` severity by default. Escalate
+8. Report truthful naming violations as `Normal` severity by default. Escalate
    only when the misleading name creates a blocker-level correctness, security,
    or data risk.
 
@@ -66,22 +66,18 @@ Before finalizing, re-read each finding and confirm:
 Lead with numbered findings ordered by severity. Each finding must include:
 
 ```text
-1. <Title>
-   Severity: <Blocker|Normal|Low>
-   Location: <file:line or file:method>
-   What: <what is wrong>
-   Why: <impact or risk>
-   How: <specific fix direction>
+1. <Blocker|Normal|Low> — <file:line or file:method>
+   Problem/impact: <what is wrong and why it matters>
+   Fix: <specific fix direction>
 ```
 
 After findings, include:
 
-- `Laravel boundary audit:` say `completed` when `laravel-standards` applies,
-  otherwise say `not applicable`; if completed, list the Laravel delivery files
-  audited
+- `Laravel boundary audit:` say `completed — <count> delivery files audited`
+  when `laravel-standards` applies, otherwise say `not applicable`. List audited
+  files only when the paths clarify the review scope, a finding, or uncertainty.
 - `Open questions:` only when answers would change the review outcome.
 - `Tests:` describe relevant tests run or missing verification.
-- `Summary:` one short paragraph only after the findings.
 
 If there are no findings, state that clearly and still mention residual risks or
 missing tests.
