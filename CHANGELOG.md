@@ -1,3 +1,9 @@
+## [1.13.0](https://github.com/bnymn/agent-plugin-development/compare/v1.12.0...v1.13.0) (2026-07-15)
+
+### Features
+
+* add Luna code explorer ([#37](https://github.com/bnymn/agent-plugin-development/issues/37)) ([a17ab23](https://github.com/bnymn/agent-plugin-development/commit/a17ab23dc903627ddf1498bdc749bba932428dce))
+
 ## [1.12.0](https://github.com/bnymn/agent-plugin-development/compare/v1.11.0...v1.12.0) (2026-07-15)
 
 ### Features
