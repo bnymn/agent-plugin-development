@@ -1,10 +1,6 @@
 ---
 name: coding-standards
-description: >-
-  Apply reusable coding standards while implementing, refactoring, reviewing, or
-  explaining software changes. Use when the user asks to follow project-wide
-  engineering conventions, enforce coding style, improve maintainability, add
-  tests, or keep behavior consistent across repositories.
+description: Defines shared implementation and review standards loaded by the development and code-review workflows.
 ---
 
 # Coding Standards

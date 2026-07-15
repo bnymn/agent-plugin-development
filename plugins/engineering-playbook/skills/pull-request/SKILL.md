@@ -1,9 +1,6 @@
 ---
 name: pull-request
-description: >-
-  Writes and creates small GitHub pull requests with Conventional Commit titles,
-  concise descriptions, and issue-closing references. Use when opening,
-  drafting, publishing, or preparing a pull request.
+description: Creates concise GitHub pull requests with Conventional Commit titles and issue-closing references. Use when asked to open a pull request.
 ---
 
 # Pull Request
