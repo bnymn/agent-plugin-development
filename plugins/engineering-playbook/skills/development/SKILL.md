@@ -70,14 +70,19 @@ use `code-review`. Do not paste the diff or implementation reasoning.
 
 ## Verification Gate
 
-Run one Mago round per task after review findings are handled. Do not run Mago
-again for fixes or follow-up changes unless the user explicitly asks.
+After review findings are handled, run the repository's documented verification
+commands. Identify them from project documentation, task or package scripts, CI
+workflows, configuration, and declared dependencies.
 
-- Run each command once in order:
+- Run Mago only when repository configuration, declared dependencies, or project
+  documentation confirms that it applies. When it applies, run each command
+  once in order:
   1. `mago fmt --check`
   2. `mago lint`
   3. `mago analyze`
   4. `mago guard`
+- Do not run Mago again for fixes or follow-up changes unless the user
+  explicitly asks.
 - Fix Mago warnings and errors without rerunning Mago.
 - Stop and ask the user when a Mago fix would change the implementation
   direction. Include concrete options.
@@ -87,8 +92,8 @@ again for fixes or follow-up changes unless the user explicitly asks.
 ## Pull Request Gate
 
 Create a pull request only after the implementation is done, required review
-findings are handled, Mago is clean, and relevant tests pass. Otherwise report
-the blocker instead of opening the PR.
+findings are handled, applicable verification is clean, and relevant tests pass.
+Otherwise report the blocker instead of opening the PR.
 
 When this gate is clean, follow `pull-request` to write the title and
 description.
